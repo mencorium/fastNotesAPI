@@ -180,4 +180,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name - [@mencorium](https://github.com/mencorium)
 
-Project Link: [https://github.com/mencorium/notepad_app](https://github.com/mencorium/notepad_app)
+Project Link: [https://github.com/mencorium/notepad_app](https://github.com/mencorium/fastNotesAPI)
