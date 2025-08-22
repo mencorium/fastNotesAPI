@@ -178,6 +178,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Your Name - [@yourusername](https://github.com/yourusername)
+Your Name - [@mencorium](https://github.com/mencorium)
 
-Project Link: [https://github.com/yourusername/notepad_app](https://github.com/yourusername/notepad_app)
+Project Link: [https://github.com/mencorium/notepad_app](https://github.com/mencorium/notepad_app)
