@@ -1,0 +1,5 @@
+.idea
+fastnotes/
+*.pyc
+.env
+__pycache__/
