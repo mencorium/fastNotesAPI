@@ -68,18 +68,20 @@ flowchart LR
 ### Core Verification Workflow
 ```mermaid
 flowchart TD
-    A[Student Submits Daily Log] --> B{System Records Log<br/>Status: 'SUBMITTED'}
-    B --> C[Industrial Supervisor Notified]
-    C --> D{Reviews Log}
-    D -->|Rejects| E[Request Revision]
-    E --> A
-    D -->|Accepts| F[Verifies & Escalates]
-    F --> G{Status: 'VERIFIED_INDUSTRY'}
-    G --> H[University Supervisor Notified]
-    H --> I{Validates Log}
-    I -->|Rejects| J[Flag for Review]
-    I -->|Accepts| K[Validates Log]
-    K --> L{Status: 'VERIFIED_ACADEMIC'<br/>& Archives}
+    A[Start] --> B[Student Submits\nDaily Log with Details]
+    B --> C{System Records Log\nStatus: 'SUBMITTED'}
+    C --> D[Industrial Supervisor\nNotified]
+    D --> E{Industrial Supervisor\nReviews Log}
+    E --->|Rejects| F[Request Revision\nNotification to Student]
+    F --> B
+    E --->|Accepts| G[Supervisor Verifies &\nEscalates Log]
+    G --> H{System Updates Log\nStatus: 'VERIFIED_INDUSTRY'}
+    H --> I[University Supervisor\nNotified]
+    I --> J{University Supervisor\nValidates Log}
+    J --->|Rejects| K[Flag for Review\nNotification to Coordinator]
+    J --->|Accepts| L[Supervisor Validates Log]
+    L --> M{System Updates Log\nStatus: 'VERIFIED_ACADEMIC'\n& Archives}
+    M --> N[End]
 ```
 
 ## 📁 Project Structure (FastAPI Backend)
